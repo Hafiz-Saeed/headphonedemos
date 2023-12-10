@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&family=Croissant+One&family=Dela+Gothic+One&family=Fredericka+the+Great&family=Gabarito:wght@400;600&family=Heebo:wght@300&family=Inclusive+Sans&family=Inter:wght@300&family=Kanit:wght@100;300&family=Kenia&family=Maven+Pro&family=Monoton&family=Nunito+Sans:opsz,wght@6..12,300&family=Onest:wght@300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;700&family=Rubik+Iso&family=Rubik:ital,wght@1,600&family=Shadows+Into+Light&family=Skranji&family=Teko:wght@300;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&family=Croissant+One&family=Fredericka+the+Great&family=Heebo:wght@300&family=Inclusive+Sans&family=Kanit:wght@100;300&family=Kenia&family=Maven+Pro&family=Monoton&family=Nunito+Sans:opsz,wght@6..12,300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto:wght@700&family=Rubik+Iso&family=Shadows+Into+Light&family=Skranji&family=Teko:wght@300;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&family=Croissant+One&family=Fredericka+the+Great&family=Heebo:wght@300&family=Inclusive+Sans&family=Inter:wght@300&family=Kanit:wght@100;300&family=Kenia&family=Maven+Pro&family=Monoton&family=Nunito+Sans:opsz,wght@6..12,300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;700&family=Rubik+Iso&family=Shadows+Into+Light&family=Skranji&family=Teko:wght@300;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&family=Croissant+One&family=Fredericka+the+Great&family=Heebo:wght@300&family=Inclusive+Sans&family=Inter:wght@300&family=Kanit:wght@100;300&family=Kenia&family=Maven+Pro&family=Monoton&family=Nunito+Sans:opsz,wght@6..12,300&family=Onest:wght@300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;700&family=Rubik+Iso&family=Shadows+Into+Light&family=Skranji&family=Teko:wght@300;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&family=Croissant+One&family=Fredericka+the+Great&family=Gabarito&family=Heebo:wght@300&family=Inclusive+Sans&family=Inter:wght@300&family=Kanit:wght@100;300&family=Kenia&family=Maven+Pro&family=Monoton&family=Nunito+Sans:opsz,wght@6..12,300&family=Onest:wght@300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;700&family=Rubik+Iso&family=Shadows+Into+Light&family=Skranji&family=Teko:wght@300;500&display=swap"
+        rel="stylesheet">
+
+
+    <!-- fontawesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- icon -->
+    <link rel="icon" type="png/img"
+        href="https://i.pinimg.com/736x/87/99/59/879959c9e18729568156805fbb6c912b.jpg">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-warning p-4">
+
+                <div style="text-align: center; text-decoration: none ; ">
+                    <a href="#home" style=" text-decoration: none ; color: black;">Home</a><br>
+                    <a href="#" style=" text-decoration: none ; color: black; ">Watch video</a><br>
+
+                    <div class="dropdown">
+                        <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blocks
+                        </button>
+                        <ul class="dropdown-menu bg-warning" style="width: 100%;">
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Menu Pages</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Headers</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Images and Videos</b></a>
+                            </li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Shops</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Sliders & Gafferies</b></a>
+                            </li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Features</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Content</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Info</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Teams and
+                                        Testimonias</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Forms and Maps</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Pricing Tables</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Tables</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Social</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Footers</b></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Demo Pages
+                        </button>
+                        <ul class="dropdown-menu bg-warning" style="width: 100%;">
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Headphones Shop</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Shoe Shop</b></a></li>
+                            <li><a class="dropdown-item text-light text-center" href="#"><b>Cafe</b></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1 mt-3" href="#!" role="button"
+                        style="border-radius: 50%;"><i class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1 mt-3" href="#!" role="button"
+                        style="border-radius: 50%;"><i class="fab fa-twitter"></i></a>
+
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1 mt-3" href="#!" role="button"
+                        style="border-radius: 50%;"><i class="fab fa-linkedin-in"></i></a><br>
+
+                    <button type="button" class="btn btn-light mt-2" style="border-radius: 20px;">BUY NOW</button>
+
+
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-warning">
+            <div class="container-fluid">
+                <button style="margin-left: 1250px;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: aliceblue;"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- section 1 -->
+
+    <section id="home">
+        <div class="section1">
+            <div class="img1">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lfGVufDB8fDB8fHww&w=1000&q=80"
+                    alt="">
+            </div>
+            <div class="row head">
+
+                <p style="font-size: 17px; margin-left: 40%;"><b>THINKING OF BUYING A HEADPHONE?</b></p>
+                <h1 style="margin-left: 40%;font-family: 'Gabarito', cursive;font-size: 50px;"><strong>Welcome to our
+                        Headphones
+                        Shop</strong>
+                </h1>
+                <button type="button" class="btn mt-2"
+                    style="margin-left: 48%;padding: 5px;font-family: 'Young Serif', serif;height: 40px;">Shopping
+                    now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section2 -->
+
+    <section style="background-color: rgba(255, 228, 196, 0.445);width: 100%;height: 250px;">
+        <div class="container">
+            <h1 style="color: brown;padding-top: 5%;font-family: 'Inter', sans-serif;">Find a quality and right
+                headphones not easy</h1>
+            <p style="text-align: justify;margin-left: 2%;"><b>Lorem ipsum, dolor</b> sit amet consectetur adipisicing
+                elit. Eligendi, debitis, eos deserunt pariatur libero ducimus adipisci amet eius consequuntur officiis
+                inventore. Fugiat cum totam, ipsum necessitatibus accusantium illum eligendi facilis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt reiciendis nesciunt placeat cumque
+                animi molestiae, nisi possimus consequuntur perferendis suscipit exercitationem, nemo ut, debitis saepe
+                dolorem omnis distinctio fugiat! <a href="#" style="text-decoration: none;color: brown;">Learn
+                    more...</a></p>
+        </div>
+    </section>
+
+    <!-- section3 -->
+
+    <section style="background-color: hsl(41, 77%, 53%);padding: 15px;">
+        <div class="container">
+            <h1 style="text-align: center;color: white;font-size: 30px;">We will help you to choose the best headphones!
+            </h1>
+        </div>
+    </section>
+
+
+    <!-- section4 -->
+    <section style="background-color: rgba(255, 228, 196, 0.445);height: 500px;">
+        <div class="container-fluid">
+            <h1 style="font-family: 'Onest', sans-serif;margin-left: 10%;font-size: 35px;padding-top: 5%;">Hottest
+                headphones of the month</h1>
+
+            <div class="row mt-4">
+                <!-- col1 -->
+                <div class="col-4">
+                    <div class="card"
+                        style="width: 18rem;background-color: hsl(41, 77%, 53%);margin-left: 28%;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+                        <div class="innerlay">
+                            <img src="https://img.freepik.com/premium-photo/concept-music-festivals-radio-stations-music-lovers-live-with-music-music-heart-notes-song-melody-apps-websites-treble-clef-headphones-homestudio-audio-recording_771426-4100.jpg"
+                                class="card-img-top" alt="h1" style="object-fit: cover;height: 230px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 style="font-size: 15px;"><b>HEADPHONES</b></h5>
+
+                            <p class="card-text" style="color: white;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. </p>
+                            <div class="overlay">
+                                <button type="button" class="btn btn-outline-light"
+                                    style="background-color: hsl(41, 100%, 53%);width: 120px;opacity: .9;font-size: 15px;"><span
+                                        class="rainbow-text">HEADPHONES</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- col-2 -->
+
+                <div class="col-4">
+                    <div class="card "
+                        style="width: 18rem;background-color: hsl(41, 77%, 53%);margin-left: 15%;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+                        <div class="innerlay">
+                            <img src="https://dadducharger.com/public/uploads/all/T5CzmPnLaGSJQBbJ9ZcmhUAFNONvnKfdiRiJ1pxE.png"
+                                class="card-img-top" alt="h2" style="object-fit: cover;height: 230px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 style="font-size: 15px;"><b>HEADPHONES</b></h5>
+
+                            <p class="card-text" style="color: white;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. </p>
+
+                            <div class="overlay"> <button type="button" class="btn btn-outline-light"
+                                    style="background-color: hsl(41, 100%, 53%);width: 120px;opacity: .9;font-size: 15px;"><span
+                                        class="rainbow-text">HEADPHONES</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- col-3 -->
+                <div class="col-4">
+                    <div class="card"
+                        style="width: 18rem;background-color: hsl(41, 77%, 53%);box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+                        <div class="innerlay"> <img
+                                src="https://img.freepik.com/premium-photo/shiny-headphones-illuminate-nightclub-modern-entertainment_1003533-694.jpg"
+                                class="card-img-top" alt="h3" style="object-fit: cover;height: 185px;height: 230px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 style="font-size: 15px;"><b>HEADPHONES</b></h5>
+
+                            <p class="card-text" style="color: white;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. </p>
+
+                            <div class="overlay">
+                                <div class="overlay"> <button type="button" class="btn btn-outline-light"
+                                        style="background-color: hsl(41, 100%, 53%);width: 120px;opacity: .9;font-size: 15px;"><span
+                                            class="rainbow-text">HEADPHONES</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </section>
+
+
+    <!-- section5 -->
+
+    <section style="background-color: rgba(255, 228, 196, 0.445);">
+
+        <div class="container">
+            <h1 style="font-family: 'Onest', sans-serif;font-size: 35px;padding-top: 5%;margin-left: 2%;">Meet Our New
+                Headphones</h1> <br>
+
+            <div class="gallery-container" id="gallery">
+                <a href="#"> <img class="gallery-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUILInzbVaNdOa13_DILyvJOOi8il_vNDoZoqLw3OOjJT4zEi30JHTeT6BwFMWjROt3NM&usqp=CAU"
+                        alt="Image 1"></a>
+                <div class="gallery-overlay">
+                    <div class="gallery-caption"><a href="#" style="text-decoration: none;color: white;">Type Caption
+                            Here..</a></div>
+                </div>
+            </div>
+
+            <div class="gallery-container" id="gallery">
+                <a href="#"> <img class="gallery-image"
+                        src="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                        alt="Image 2"></a>
+                <div class="gallery-overlay">
+                    <div class="gallery-caption"><a href="#" style="text-decoration: none;color: white;">Type Caption
+                            Here..</a></div>
+                </div>
+            </div>
+
+            <div class="gallery-container" id="gallery">
+                <a href="#"> <img class="gallery-image"
+                        src="https://rare-gallery.com/uploads/posts/5323937-headphone-flower-grass-bokeh-green-blue-listen-music-nature-skull-candy-technology-purple-flower-blue-headphone-ipod-lawn-outside-greenery-pink-smart-phone-phone-free-images.jpg"
+                        alt="Image 1"></a>
+                <div class="gallery-overlay">
+                    <div class="gallery-caption"><a href="#" style="text-decoration: none;color: white;">Type Caption
+                            Here..</a></div>
+                </div>
+            </div>
+
+            <div class="gallery-container" id="gallery">
+                <a href="#"> <img class="gallery-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1A_bhhwNpZrz6ezxCUmfMqH-aqzhUy9ATQ&usqp=CAU"
+                        alt="Image 1"></a>
+                <div class="gallery-overlay">
+                    <div class="gallery-caption"><a href="#" style="text-decoration: none;color: white;">Type Caption
+                            Here..</a></div>
+                </div>
+            </div>
+
+            <div class="gallery-container" id="gallery">
+                <a href="#"> <img class="gallery-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt7pahhBnXFAfP8CHC-PoyiHA7dKmB5q5SXg&usqp=CAU"
+                        alt="Image 1"></a>
+                <div class="gallery-overlay">
+                    <div class="gallery-caption"><a href="#" style="text-decoration: none;color: white;">Type Caption
+                            Here..</a></div>
+                </div>
+            </div>
+
+            <div class="gallery-container" id="gallery">
+                <a href="#"> <img class="gallery-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPNjHuhoDfy3xaweWx4sx6wTlViMtiKiqbMw&usqp=CAU"
+                        alt="Image 1"></a>
+                <div class="gallery-overlay">
+                    <div class="gallery-caption"><a href="#" style="text-decoration: none;color: white;">Type Caption
+                            Here..</a></div>
+                </div>
+            </div>
+
+            <div class="gallery-container" id="gallery">
+                <a href="#"> <img class="gallery-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV2ALDqmWbYULBXEBH3QctPUcIi2qj9SiIOw8u6qTnLpdI_wZJT7awLorye2z10IBN7Tw&usqp=CAU"
+                        alt="Image 1"></a>
+                <div class="gallery-overlay">
+                    <div class="gallery-caption"><a href="#" style="text-decoration: none;color: white;">Type Caption
+                            Here..</a></div>
+                </div>
+            </div>
+
+            <div class="gallery-container" id="gallery">
+                <a href="#"> <img class="gallery-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7cyjrijlXdwn8r69N0cvCx0Sg7G8iMAGdPw&usqp=CAU"
+                        alt="Image 1"></a>
+                <div class="gallery-overlay">
+                    <div class="gallery-caption"><a href="#" style="text-decoration: none;color: white;">Type Caption
+                            Here..</a></div>
+                </div>
+            </div>
+
+        </div>
+
+
+           
+    </section>
+
+
+    <!-- section6 -->
+
+    <section style="background-color:hsl(41, 77%, 53%) ;">
+        <div class="containerfluid">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-6">
+                    <p style="font-size: 15px;">HURRY UP THE OFFER IS LIMITED</p>
+                    <h2 style="font-size: 30px;">Like it? Pre-order and get discount</h2>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-light">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section7 -->
+
+    <section style="background-color: rgba(255, 228, 196, 0.445);">
+        <div class="container-fluid">
+            <h1 style="font-family: 'Onest', sans-serif;font-size: 35px;padding-top: 5%;margin-left: 18%;">Why do you
+                have to buy headphones only for us?</h1>
+
+            <div class="row mt-3" style="margin-right: 10%;">
+                <div class="col-2"></div>
+
+                <div class="col-2 column1">
+                    <div class="col1">
+                        <h4 style="margin-top: 20%;"><b>HIGH QUALITY</b></h4>
+                    </div>
+                    <div class="col2">
+                        <h5>01.</h5>
+                    </div>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> <a
+                            href="#" style="text-decoration: none;color: orange;">Learn More..</a> </p>
+
+
+                </div>
+
+                <div class="col-2 column1">
+                    <div class="col1">
+                        <h4 style="margin-top: 16%;"><b>ORIGINAL DEVICES</b></h4>
+                    </div>
+                    <div class="col2">
+                        <h5>02.</h5>
+                    </div>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> <a
+                            href="#" style="text-decoration: none;color: orange;">Learn More..</a></p>
+                </div>
+
+                <div class="col-2 column1">
+                    <div class="col1">
+                        <h4 style="margin-top: 17%;"><b>YEAR WARRANTY</b></h4>
+                    </div>
+                    <div class="col2">
+                        <h5>03.</h5>
+                    </div>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> <a
+                            href="#" style="text-decoration: none;color: orange;">Learn More..</a></p>
+                </div>
+
+                <div class="col-2 column1 ">
+                    <div class="col1">
+                        <h4 style="margin-top: 20%;"><b>WEEK TO CHECK</b></h4>
+                    </div>
+                    <div class="col2">
+                        <h5>04.</h5>
+                    </div>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> <a
+                            href="#" style="text-decoration: none;color: orange;">Learn More..</a></p>
+                </div>
+
+                <div class="col-2"></div>
+
+
+            </div>
+
+        </div><br>
+
+        <a href="#" style="text-decoration: none;color: gray;">
+            <h5 class="text-center" style="font-size: 15px;text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.658);"><b>STILL NOT
+                    CONVINCED?</b></h5>
+        </a>
+
+        <h3 class="text-center mt-3" style="text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);"><b>Visit us and see
+                yourself!!</b></h3>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125742.89681316778!2d76.13308724335937!3d9.978350200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d05e90d5e95%3A0x60792215aa26b6ba!2sboAt%20store%20kochi%20by%20SGH%20Tech!5e0!3m2!1sen!2sin!4v1695911755613!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0;border-radius: 13px;margin-top: 1%;margin-bottom: 1%;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- sectionlast -->
+
+
+    <footer style="background-color: rgba(255, 228, 196, 0.445);height: 130px;">
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3 ms-5 mt-5">
+                <a href="#home"><img
+                        src="https://thumbs.dreamstime.com/b/cat-headphones-cat-leastening-music-generative-ai-cat-headphones-cat-leastening-music-generative-ai-279508398.jpg"
+                        alt="footimg"
+                        style="width:80px ;height: 60px;object-fit: cover;border-radius: 5px;box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;"></a>
+            </div>
+            <div class="col-3 mt-5">
+                <p style="font-size: 15px;color: darkgray;text-align: center;"> © 2023 All Rights Reserved terms of Use
+                    and Privacy Policy. </p>
+            </div>
+            <div class="col-3 mt-5" style="margin-left: 10%;">
+                <!-- Facebook -->
+                <a class="btn btn-outline-warning btn-floating m-1" href="#!" role="button"
+                    style="border-radius: 50%;"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-warning btn-floating m-1" href="#!" role="button"
+                    style="border-radius: 50%;"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-warning btn-floating m-1" href="#!" role="button"
+                    style="border-radius: 50%;"><i class="fab fa-google"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-warning btn-floating m-1" href="#!" role="button"
+                    style="border-radius: 50%;"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

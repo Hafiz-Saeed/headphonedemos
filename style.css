@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 620px;
+
+}
+
+.img1 {
+    position: relative;
+}
+
+.head {
+    position: absolute;
+    top: 40%;
+    width: 450px;
+}
+
+.row button {
+    border-radius: 20px;
+    width: 130px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+/* Container holding the image and overlay */
+.gallery-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+}
+
+/* Style for the image */
+.gallery-image {
+    width: 250px;
+    height: 160px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Black overlay on hover */
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Black overlay with 50% opacity */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Caption text */
+.gallery-caption {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay and caption on hover */
+.gallery-container:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-container:hover .gallery-caption {
+    opacity: 1;
+}
+
+#gallery img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.row .col-6 {
+    color: white;
+    padding: 15px;
+}
+
+.col-4 button {
+    margin-top: 10%;
+}
+
+.col1 {
+    position: absolute;
+    opacity: 1;
+
+}
+
+.col2 {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.column1 {
+    margin: 15px;
+}
+
+.column1 h4 {
+    font-size: 13px;
+}
+
+.column1 h5 {
+    font-weight: bolder;
+    font-size: 40px;
+    color: orange;
+    opacity: .5;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.innerlay {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 1%;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+    background-clip : text;
+    -webkit-background-clip : text;
+    color: transparent;
+    display: inline-block;
+}
